@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/javascript/meetings.js"></script>
+    <link rel="stylesheet" href="static/css/meetings.css">
+    <title>Meetings</title>
+</head>
+<body onload="init();">
+    <div style="display: flex; width: 100%;">
+        <div style="width: 50%;">
+            <h3>Create a meeting: </h3>
+            <label>Select an event you are attending:</label>
+            <br />
+            <select id="eventsAttending">
+
+            </select>
+            <br />
+            <label>How long will the meeting last (in minutes)?</label>
+            <br />
+            <input type="text" id="meetingDurationInput" placeholder="e.g. 90"/>
+            <br />
+            <label>Who do you want to invite?</label>
+            <br />
+            <input type="text" id="searchInput" placeholder="Search by name" />
+            <div id="userList" style="max-height: 300px; overflow: auto;">
+
+            </div>
+            <button onclick="sendInvitations();">Send Invitiations</button>
+            <br />
+            <br />
+            <a href="/myInvitations">Invitation inbox (0 new invitations)</a>
+        </div>
+        <div style="width: 50%;">
+            <h3>Your meetings:</h3>
+            <label>Select one of your meetings:</label>
+            <br />
+            <select id="meetingsOrganized">
+
+            </select>
+            <br />
+            <div id="selectedMeetingInfo">
+                <p id="meetingIdLabel">Meeting id: </p>
+                <p id="eventNameLabel">Event: </p>
+                <p id="dateLabel">Scheduled date: </p>
+                <p id="timeLabel">Scheduled time: </p>
+                <p id="durationLabel">Duration: </p>
+            </div>
+            <br />
+            <p>Time schedulding:</p>
+            <div id="timeSchedulingDiv">
+
+            </div>
+            <br />
+            <div>
+                <h5>Invitations: </h5>
+                <div id="inviteeInfo">
+
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+</body>
+</html>

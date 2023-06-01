@@ -1,0 +1,37 @@
+.card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.organizer {
+    font-weight: bold;
+}
+
+.event-name {
+    margin-top: 5px;
+}
+
+.date {
+    color: #888;
+}
+
+.buttons-container {
+    margin-top: 10px;
+}
+
+.accept-button,
+.reject-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reject-button {
+    background-color: #FF5722;
+}

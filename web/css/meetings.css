@@ -1,0 +1,18 @@
+.card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .email {
+    color: #888;
+  }
+  
+  .status {
+    margin-top: 5px;
+  }

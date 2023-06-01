@@ -1,0 +1,42 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+  
+  #event-details {
+    margin-bottom: 20px;
+  }
+  
+  #calendar {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .calendar-column {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .calendar-time-column {
+    font-weight: bold;
+  }
+  
+  .calendar-schedule-column {
+    padding: 10px;
+  }
+  
+  .schedule-item {
+    margin-bottom: 10px;
+  }
+  
+  .schedule-item span {
+    font-weight: bold;
+  }
+  

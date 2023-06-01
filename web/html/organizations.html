@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/javascript/organizations.js"></script>
+    <title>Organization management</title>
+</head>
+<body onload="getOrganizations();">
+    <div style="display: flex; width: 100%;">
+        <div style="width: 50%;">
+            <h3>Create new organization</h3>
+            <input type="text" id="formOrganizationName" placeholder="e.g. b2match" />
+            <br />
+            <button onclick="createNewOrganization();">Add to database</button>
+        </div>
+        <div style="width: 50%;">
+            <h3>List of all organizations (json)</h3>
+            <ul id="listOfOrganizations">
+                
+            </ul>
+            <br />
+            <br />
+            <p>Data in json format:</p>
+            <br />
+            <p id="jsonDisplayField"></p>
+        </div>
+    </div>
+</body>
+</html>

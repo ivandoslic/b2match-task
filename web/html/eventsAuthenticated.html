@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authStatus" content="true">
+    <script src="static/javascript/events.js"></script>
+    <link rel="stylesheet" href="static/css/events.css">
+    <title>Manage events</title>
+</head>
+<body onload="init();">
+    <div style="display: flex; width: 100%;">
+        <div style="width: 50%;">
+            <h3>Create an event</h3>
+            <input type="text" id="formEventName" placeholder="e.g. Job Fair" />
+            <br />
+            <label>Date:</label>
+            <input type="date" id="formEventDate" placeholder="01/01/1999" />
+            <br />
+            <label>Start:</label>
+            <input type="time" id="formEventStart" value="00:00:00" step="1"/>
+            <br />
+            <label>End:</label>
+            <input type="time" id="formEventEnd" value="00:00:00" step="1"/>
+            <br />
+            <label>Organizator:</label>
+            <select id="formEventOrganizator">
+
+            </select>
+            <br />
+            <button onclick="createEventInDatabase();">Add to database</button>
+        </div>
+        <div style="width: 50%;">
+            <h3>Active events:</h3>
+            <br />
+            <div id="eventList" style="width: 100%; overflow: auto;">
+
+            </div>
+            <h3>Events you attend:</h3>
+            <div id="attendingList" style="width: 100%; overflow: auto;">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
